@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    listener:
+      concurrency: 10
+    producer:
+      bootstrapServers: localhost:9092
+    consumer:
+      bootstrapServers: localhost:9092
+      group-id: app
+      enableAutoCommit: false
